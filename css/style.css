@@ -60,6 +60,13 @@ html, body{
     .one-third {
      width:29.33333%;
    }
+   .footer-nav-block .one-third {
+     width:46%;
+   }
+   .footer .right-footer-block {
+     display: block;
+     width: 96%;
+   }
  }
 
  @media (min-width: 992px) {
@@ -86,7 +93,7 @@ html, body{
  }
  @media (min-width: 1920px) {
    .container {
-     width: 1970px;
+     width: 1870px;
    }
    .header .hero h1 {
      font-size:68px;
