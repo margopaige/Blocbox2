@@ -68,6 +68,22 @@ html, body{
      width: 1170px;
    }
  }
+ @media (min-width: 1920px) {
+   .container {
+     width: 1970px;
+   }
+   .header .hero h1 {
+     font-size:68px;
+     font-weight: normal;
+     margin:115px 0 0;
+   }
+   .header .hero p {
+     font-size: 40px;
+     line-height: 50px;
+     font-weight: 100;
+     margin:10px 0 40px;
+   }
+ }
 
  /* HEADER */
  header {
