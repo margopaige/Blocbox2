@@ -10,13 +10,13 @@ html, body{
  }
 
  h2 {
-   font-size:28px;
+   font-size:22px;
    font-weight: normal;
    margin-bottom: 5px;
  }
  p {
-   font-size:16px;
-   line-height: 19px;
+   font-size:14px;
+   line-height: 17px;
    font-weight: 100;
    padding-left: 50px;
    padding-right: 50px;
@@ -38,7 +38,12 @@ html, body{
  .container:after {
    clear: both;
  }
- .one-half .one-third, .one-fourth {
+ .one-half {
+   width:46%;
+   float:left;
+   position:relative;
+ }
+ .one-third, .one-fourth {
    width:96%;
    float:left;
    position:relative;
@@ -109,9 +114,19 @@ html, body{
    margin:3em auto 0;
    width: 50%;
    }
+  .btn {
+     border-radius: 4px;
+     color:#FFFFFF;
+     font-weight: 700;
+     text-decoration: none;
+     padding:10px 30px;
+     background: #2ECC71;
+     border: 2px solid #2ECC71;
+     box-shadow: 0px 2px 0px 0px #22894E;
+   }
  }
 
- /* BUTTONS */
+ /* BUTTONS - does not work unless added to header? I'm unsure why. */
  .btn {
    border-radius: 4px;
    color:#FFFFFF;
@@ -172,6 +187,11 @@ html, body{
   min-height: 439px;
   position: relative;
   margin-top: 25px;
+  /* If these webkits are disabled, the cost boxes appear properly on mobile however they no longer look correct on desktop. See row 402 for corresponding code.*/
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 40px;
+  -webkit-margin-end: 40px;
 }
 .box.middle {
   min-height: 485px;
@@ -191,7 +211,7 @@ html, body{
   padding:10px 0;
 }
 .box h4 {
-   font-size:50px;
+   font-size:30px;
    font-weight: normal;
    margin:40px 0 10px;
    color:#3498DB;
@@ -303,9 +323,17 @@ footer .right-footer-block {
   background-color: transparent;
 }
 footer .logo{
-  padding: 2.35em 0;
   margin: 0 auto;
   display: block;
+  padding: 1.35em 0px;
+}
+.footer-nav-block .right-footer-block {
+  display: block;
+  position: relative;
+  width: 96%;
+  min-height: 1px;
+  margin: 0 2% 20px
+}
 }
 
 @media (min-width: 668px) {
@@ -314,18 +342,28 @@ footer .logo{
    }
    .one-half {
      width:46%;
+     display: inline-block;
+     float: left;
+     clear: none;
+     min-height: 1px;
+     margin:0 2% 20px;
    }
     .one-third {
      width:29.33333%;
+     display: inline-block;
+     float: left;
+     clear: none;
+     min-height: 1px;
+     margin:0 2% 20px;
    }
    .footer-nav-block .one-third {
      margin-top: 10px;
-     width:46%
+     width:46%;
    }
    .footer-nav-block .right-footer-block {
      display: block;
      width: 96%;
-     margin-top: -10px;
+     margin-top: -20px;
    }
    .benefits i {
      font-size: 28px;
@@ -337,7 +375,7 @@ footer .logo{
      font-size: 16px;
    }
    h1 {
-     font-size: 22px;
+     font-size: 28px;
    }
    h2, h3, h4 {
      font-size: 18px;
@@ -353,6 +391,26 @@ footer .logo{
    }
    header .hero img {
      width: 70%;
+   }
+   .box {
+    padding:0 15px 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+    min-height: 439px;
+    position: relative;
+    margin-top: 25px;
+    /* If this is enabled, the cost boxes appear properly on standard desktop however they no longer look correct on mobile.
+
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+  }*/
+  .box h4 {
+     font-size:50px;
+     font-weight: normal;
+     margin:40px 0 10px;
+     color:#3498DB;
    }
  }
 
@@ -370,13 +428,12 @@ footer .logo{
    footer .right-footer-block {
      background-color: #3498DB;
    }
-   footer .logo{
+   /*footer .logo{
      padding: 2em 0 2em 1.5em;
-   }
+   }*/
    .container {
      width: 930px;
    }
-  
    .one-third {
      width:29.33333%;
    }
@@ -400,12 +457,38 @@ footer .logo{
      font-weight: 100;
      margin:10px 0 40px;
    }
+   .footer-nav-block .right-footer-block {
+     margin-top: -10px;
+   }
+   h1 {
+     font-size: 28px;
+   }
+   h2, h3, h4 {
+     font-size: 22px;
+   }
+   p {
+     font-size: 14px;
+   }
+   header .hero h1 {
+     font-size:48px;
+     font-weight: normal;
+     margin:95px 0 0;
+   }
+   header .hero p {
+     font-size: 22px;
+     line-height: 26px;
+     font-weight: 100;
+     margin:10px 0 40px;
+   }
  }
 
  @media (min-width: 1200px) {
    .container {
      width: 1170px;
    }
+  /* .footer-nav-block {
+     height: 100px;
+   }*/
  }
 
  @media (min-width: 1920px) {
