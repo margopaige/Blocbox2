@@ -50,63 +50,6 @@ html, body{
    min-height: 1px;
    margin: 20px 2% 20px;
  }
- @media (min-width: 668px) {
-   .container {
-     width: 650px;
-   }
-   .one-half {
-     width:46%;
-   }
-    .one-third {
-     width:29.33333%;
-   }
-   .footer-nav-block .one-third {
-     width:46%;
-   }
-   .footer .right-footer-block {
-     display: block;
-     width: 96%;
-   }
- }
-
- @media (min-width: 992px) {
-   .container {
-     width: 970px;
-   }
-   .one-half {
-     width:46%;
-   }
-   .one-third {
-     width:29.33333%;
-   }
-   .one-fourth {
-     width:21%;
-   }
-   .one-fourth-lower {
-     width:21%;
-   }
- }
- @media (min-width: 1200px) {
-   .container {
-     width: 1170px;
-   }
- }
- @media (min-width: 1920px) {
-   .container {
-     width: 1870px;
-   }
-   .header .hero h1 {
-     font-size:68px;
-     font-weight: normal;
-     margin:115px 0 0;
-   }
-   .header .hero p {
-     font-size: 40px;
-     line-height: 50px;
-     font-weight: 100;
-     margin:10px 0 40px;
-   }
- }
 
  /* HEADER */
  header {
@@ -361,7 +304,55 @@ footer .logo{
   display: block;
 }
 
-@media (min-width: 992px){
+@media (min-width: 668px) {
+   .container {
+     width: 650px;
+   }
+   .one-half {
+     width:46%;
+   }
+    .one-third {
+     width:29.33333%;
+   }
+   .footer-nav-block .one-third {
+     margin-top: 10px;
+     width:46%
+   }
+   .footer-nav-block .right-footer-block {
+     display: block;
+     width: 96%;
+     margin-top: -10px;
+   }
+   .benefits i {
+     font-size: 28px;
+   }
+   .box ul li {
+     font-size: 16px;
+   }
+   .small{
+     font-size: 16px;
+   }
+   h1 {
+     font-size: 22px;
+   }
+   h2, h3, h4 {
+     font-size: 18px;
+   }
+   p {
+     font-size: 14px;
+   }
+   header .hero h1{
+     font-size: 30px;
+   }
+   header .hero p {
+     font-size: 18px;
+   }
+   header .hero img {
+     width: 70%;
+   }
+ }
+
+@media (min-width: 960px){
    footer{
      background-color: #3498DB;
      background-image: linear-gradient(to left,
@@ -369,13 +360,54 @@ footer .logo{
      height: 100px;
    }
    footer p, footer nav ul{
-     padding: 2em 0;
-     text-align: left;
+     padding: .75em 0;
+     text-align: center;
    }
    footer .right-footer-block {
      background-color: #3498DB;
    }
    footer .logo{
      padding: 2em 0 2em 1.5em;
+   }
+   .container {
+     width: 930px;
+   }
+   .one-half {
+     width:46%;
+   }
+   .one-third {
+     width:29.33333%;
+   }
+   .one-fourth {
+     width:21%;
+   }
+   .one-fourth-lower {
+     width:21%;
+   }
+   .footer-nav-block .one-third {
+     width: 29.33333%;
+   }
+ }
+
+ @media (min-width: 1200px) {
+   .container {
+     width: 1170px;
+   }
+ }
+
+ @media (min-width: 1920px) {
+   .container {
+     width: 1870px;
+   }
+   .header .hero h1 {
+     font-size:68px;
+     font-weight: normal;
+     margin:115px 0 0;
+   }
+   .header .hero p {
+     font-size: 40px;
+     line-height: 50px;
+     font-weight: 100;
+     margin:10px 0 40px;
    }
  }
