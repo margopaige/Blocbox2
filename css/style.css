@@ -18,6 +18,8 @@ html, body{
    font-size:16px;
    line-height: 19px;
    font-weight: 100;
+   padding-left: 50px;
+   padding-right: 50px;
  }
 
  /* GRID */
@@ -36,7 +38,7 @@ html, body{
  .container:after {
    clear: both;
  }
- .one-half, .one-third, .one-fourth {
+ .one-half .one-third, .one-fourth {
    width:96%;
    float:left;
    position:relative;
@@ -92,7 +94,7 @@ html, body{
    position: relative;
  }
  header .hero h1 {
-   font-size:48px;
+   font-size:30px;
    font-weight: normal;
    margin:95px 0 0;
  }
@@ -105,6 +107,8 @@ html, body{
  header .hero img {
    display: block;
    margin:3em auto 0;
+   width: 50%;
+   }
  }
 
  /* BUTTONS */
@@ -372,9 +376,7 @@ footer .logo{
    .container {
      width: 930px;
    }
-   .one-half {
-     width:46%;
-   }
+  
    .one-third {
      width:29.33333%;
    }
@@ -386,6 +388,17 @@ footer .logo{
    }
    .footer-nav-block .one-third {
      width: 29.33333%;
+   }
+   header .hero h1 {
+     font-size:48px;
+     font-weight: normal;
+     margin:95px 0 0;
+   }
+   header .hero p {
+     font-size: 22px;
+     line-height: 26px;
+     font-weight: 100;
+     margin:10px 0 40px;
    }
  }
 
